@@ -10,11 +10,11 @@
     .board-wrap{padding:24px; background:white; border:4px solid #dcdcdc}
     .grid{
       display:grid;
-      grid-template-columns: repeat(10, var(--cell));
-      grid-template-rows: repeat(10, var(--cell));
-      gap: var(--gap);
-      background:transparent;
-      position:relative;
+      grid-template-columns: repeat(15, 1fr); /* 15 columns */
+      width: 95vw;   /* scale to screen width */
+      max-width: 600px; /* don’t stretch too much */
+      aspect-ratio: 15 / 15; /* keep it square */
+      border: 2px solid black;
     }
     .cell{
       width:var(--cell); height:var(--cell);
@@ -98,3 +98,4 @@
   </script>
 </body>
 </html>
+
